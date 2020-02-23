@@ -10,6 +10,7 @@
     --color-header: #2d303a;
     --color-header-shadow: #323746;
     --color-menu-dot: #494e62;
+    --color-background: #f2f2f2;
 
     --transition-time: 0.5s;
 }
@@ -24,6 +25,7 @@ body {
     font-size: 1.8rem;
     line-height: 3rem;
     color: var(--color-text);
+    background: var(--color-background);
     width: 1020px;
     margin: auto;
 }
@@ -32,6 +34,8 @@ body {
     margin: auto;
     padding: 0 40px;
 }
+
+/*header*/
 
 .header {
     background-color: var(--color-header);
@@ -47,8 +51,12 @@ body {
 }
 
 .header__shadow {
-    color: var(--color-header-shadow);
+    background: var(--color-header-shadow);
     height: 6px;
+}
+
+.h1 {
+    display: none;
 }
 
 .logo {
@@ -109,20 +117,30 @@ body {
     transition: var(--transition-time);
 }
 
+/*slider block*/
+
 .slider {
-    height: 594px;
+    height: 600px;
     background: var(--color-primary);
 }
 
 .slider__wrapper {
     display: flex;
-    height: 100%;
+    height: 594px;
     align-items: center;
+    position: relative;
 }
 
 .slider-shadow {
     background-color: var(--color-primary-shadow);
     height: 6px;
+}
+
+.phones {
+    position: absolute;
+    width: 100%;
+    top: 0px;
+    left: 0;
 }
 
 .phone {
@@ -133,15 +151,15 @@ body {
 
 .phone_vertical {
     position: absolute;
-    top: 148px;
-    left: 237px;
+    top: 53px;
+    left: 112px;
 }
 
 .phone_horizontal {
     position: absolute;
     transform: rotate(90deg);
-    top: 148px;
-    left: 672px;
+    top: 53px;
+    left: 546px;
 }
 
 .phone__base {
@@ -268,3 +286,4 @@ body {
     left: -2px;
     top: -3px;
 }
+
