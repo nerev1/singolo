@@ -79,14 +79,14 @@ body {
     text-decoration: none;
 }
 
+.logo::after {
+    content: '*';
+    color: var(--color-primary)
+}
+
 .logo:hover {
     color: var(--color-text);
     transition: var(--transition-time);
-}
-
-.asterisk {
-    color: var(--color-primary);
-    margin-left: -5px;
 }
 
 .menu {
@@ -101,14 +101,10 @@ body {
     letter-spacing: -0.2px;
 }
 
-.menu__item::after {
+.menu__item:not(:last-child)::after {
     content: '·';
     color: var(--color-menu-dot);
     margin-left: 12.8px;
-}
-
-.menu__item_last::after {
-    content: none;
 }
 
 .menu__link {
