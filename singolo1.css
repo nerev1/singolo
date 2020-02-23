@@ -97,3 +97,118 @@ body {
 .menu__link_active {
     color: var(--color-primary);
 }
+
+.slider {
+    height: 600px;
+    background: var(--color-primary);
+}
+
+.phone {
+    position: relative;
+    width: 215px;
+    height: 458px;
+}
+
+.phone_vertical {
+    position: absolute;
+    top: 148px;
+    left: 237px;
+}
+
+.phone_horizontal {
+    position: absolute;
+    transform: rotate(90deg);
+    top: 147px;
+    left: 671px;
+}
+
+.phone__base {
+    position: absolute;
+    width: 215px;
+    height: 458px;
+    border-radius: 27px;
+    background-color: #f2f2f2;
+}
+
+.phone__shadow_vertical {
+    -webkit-box-shadow: 24px 24px 0px 0px rgba(206,93,86,1);
+    -moz-box-shadow: 24px 24px 0px 0px rgba(206,93,86,1);
+    box-shadow: 24px 24px 0px 0px rgba(206,93,86,1);
+}
+
+.phone__shadow_horizontal {
+    -webkit-box-shadow: 24px -24px 0px 0px rgba(206,93,86,1);
+    -moz-box-shadow: 24px -24px 0px 0px rgba(206,93,86,1);
+    box-shadow: 24px -24px 0px 0px rgba(206,93,86,1);
+}
+
+.phone__camera {
+    position: relative;
+    width: 9px;
+    height: 9px;
+    border-radius: 4px;
+    background-color: #d8d8d8;
+    top: 17px;
+    left: 103px;
+}
+
+.phone__camera-dot {
+    position: absolute;
+    width: 4px;
+    height: 4px;
+    border-radius: 2px;
+    background-color: #eb5055;
+    top: 2px;
+    left: 2px;
+}
+
+.phone__speaker {
+    position: absolute;
+    width: 36px;
+    height: 5px;
+    border-radius: 3px;
+    background-color: #acacac;
+    top: 36px;
+    left: 90px;
+}
+
+.phone__screen {
+    position: absolute;
+    width: 188px;
+    height: 333px;
+    background: #000000;
+    border: 3px solid #c5c5c5;
+    border-radius: 5px;
+    box-sizing: content-box;
+    top: 62px;
+    left: 11px;
+}
+
+.phone__screen_vertical {
+    background: url("/assets/img/vertical_phone_image.png");
+}
+
+.phone__screen_horizontal {
+    background: url("/assets/img/horizontal_phone_image.png");
+}
+
+.phone__button {
+    position: relative;
+    width: 42px;
+    height: 42px;
+    border-radius: 21px;
+    background-color: #fafafa;
+    top: 399px;
+    left: 86px;
+}
+
+.phone__button-ico {
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    border: 1px solid #bababa;
+    box-sizing: border-box;
+    border-radius: 4px;
+    top: 13px;
+    left: 13px;
+}
