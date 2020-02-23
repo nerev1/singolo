@@ -2,11 +2,16 @@
 
 :root {
     --color-primary: #f06c64;
+    --color-primary-shadow: #ea676b;
+    --color-slider-arrow: #c94549;
     --color-light: #ffffff;
     --color-text: #767e9e;
+    --color-text-darker: #666d89;
     --color-header: #2d303a;
     --color-header-shadow: #323746;
     --color-menu-dot: #494e62;
+
+    --transition-time: 0.5s;
 }
 
 html {
@@ -57,6 +62,11 @@ body {
     text-decoration: none;
 }
 
+.logo:hover {
+    color: var(--color-text);
+    transition: var(--transition-time);
+}
+
 .asterisk {
     color: var(--color-primary);
     margin-left: -5px;
@@ -94,8 +104,9 @@ body {
     text-decoration: none;
 }
 
-.menu__link_active {
+.menu__link_active, .menu__link:hover {
     color: var(--color-primary);
+    transition: var(--transition-time);
 }
 
 .slider {
@@ -110,7 +121,7 @@ body {
 }
 
 .slider-shadow {
-    background-color: #ea676b;
+    background-color: var(--color-primary-shadow);
     height: 6px;
 }
 
@@ -233,7 +244,7 @@ body {
 .arrow {
     width: 15px;
     height: 15px;
-    border: 0 solid #c94549;
+    border: 0 solid var(--color-slider-arrow);
     border-top-width: 5px;
     border-left-width: 5px;
     border-radius: 3px;
@@ -242,7 +253,8 @@ body {
 }
 
 .arrow:hover {
-    border-color: red;
+    border-color: var(--color-header);
+    transition: var(--transition-time);
     cursor: pointer;
 }
 
