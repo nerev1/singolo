@@ -1,5 +1,13 @@
 @import "assets/fonts.css";
 
+:root {
+    --color-primary: #f06c64;
+    --color-light: #ffffff;
+    --color-text: #767e9e;
+    --color-header: #2d303a;
+    --color-header-shadow: #323746;
+    --color-menu-dot: #494e62;
+}
 
 html {
     font-size: 10px;
@@ -13,4 +21,9 @@ body {
     color: var(--color-text);
     width: 1020px;
     margin: auto;
+}
+
+.wrapper {
+    margin: auto;
+    padding: 0 40px;
 }
