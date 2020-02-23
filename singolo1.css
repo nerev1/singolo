@@ -1,0 +1,16 @@
+@import "assets/fonts.css";
+
+
+html {
+    font-size: 10px;
+}
+
+body {
+    font-family: "Lato";
+    font-weight: 300;
+    font-size: 1.8rem;
+    line-height: 3rem;
+    color: var(--color-text);
+    width: 1020px;
+    margin: auto;
+}
