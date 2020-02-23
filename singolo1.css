@@ -99,8 +99,19 @@ body {
 }
 
 .slider {
-    height: 600px;
+    height: 594px;
     background: var(--color-primary);
+}
+
+.slider__wrapper {
+    display: flex;
+    height: 100%;
+    align-items: center;
+}
+
+.slider-shadow {
+    background-color: #ea676b;
+    height: 6px;
 }
 
 .phone {
@@ -118,8 +129,8 @@ body {
 .phone_horizontal {
     position: absolute;
     transform: rotate(90deg);
-    top: 147px;
-    left: 671px;
+    top: 148px;
+    left: 672px;
 }
 
 .phone__base {
@@ -158,8 +169,8 @@ body {
     height: 4px;
     border-radius: 2px;
     background-color: #eb5055;
-    top: 2px;
-    left: 2px;
+    top: 2.5px;
+    left: 2.5px;
 }
 
 .phone__speaker {
@@ -211,4 +222,37 @@ body {
     border-radius: 4px;
     top: 13px;
     left: 13px;
+}
+
+.arrows {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.arrow {
+    width: 15px;
+    height: 15px;
+    border: 0 solid #c94549;
+    border-top-width: 5px;
+    border-left-width: 5px;
+    border-radius: 3px;
+    transform: rotate(-45deg);
+    position: relative;
+}
+
+.arrow:hover {
+    border-color: red;
+    cursor: pointer;
+}
+
+.arrow_left {
+    left: 6px;
+    top: -3px;
+}
+
+.arrow_right {
+    transform: rotate(135deg);
+    left: -2px;
+    top: -3px;
 }
