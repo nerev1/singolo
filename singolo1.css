@@ -145,6 +145,7 @@ body {
     height: 6px;
 }
 
+/*Phones*/
 .phones {
     position: absolute;
     width: 100%;
@@ -262,6 +263,8 @@ body {
     left: 13px;
 }
 
+
+/*Slider arrows*/
 .arrows {
     display: flex;
     justify-content: space-between;
@@ -330,6 +333,7 @@ body {
     margin: 26px 0 0 0;
 }
 
+/*Features*/
 .features {
     margin-top: 44px;
 }
