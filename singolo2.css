@@ -89,6 +89,7 @@ body {
     padding: 0px 7px;
     border: 1px solid var(--color-text-darker);
     border-radius: 5px;
+    cursor: pointer;
 }
 
 .tag_all {
@@ -110,6 +111,12 @@ body {
 .tag_active {
     color: #dedede;
     border-color: #c5c5c5;
+}
+
+.tag:hover {
+    color: #dedede;
+    border-color: #c5c5c5;
+    transition: .3s ease-out;
 }
 
 .portfolio__images {
@@ -182,6 +189,8 @@ body {
     font-weight: 900;
     margin: 17px 0 0 0;
     letter-spacing: -0.1px;
+    white-space: nowrap;
+    overflow: hidden;
 }
 
 .employee__info {
@@ -216,6 +225,7 @@ body {
 
 .employee__contact-icon:hover {
     background-color:var(--color-phone-camera);
+    transition: .3s ease-out;
 }
 
 .employee__contact-icon > object{
