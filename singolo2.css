@@ -197,3 +197,48 @@ body {
 .employee__info_adam {
     letter-spacing: -0.1px;
 }
+
+
+.employee__contacts {
+    display: flex;
+    margin: 23px 0 0 0;
+}
+
+.employee__contact-icon {
+    width: 30px;
+    height: 30px;
+    margin-right: 8.5px;
+    border: 1px solid var(--color-icon);
+    border-radius: 50%;
+    display: inline-flex;
+    justify-content: center;
+}
+
+.employee__contact-icon:hover {
+    background-color:var(--color-phone-camera);
+}
+
+.employee__contact-icon > object{
+    pointer-events: none;
+}
+
+.employee__contact-icon_facebook {
+    background: center / contain no-repeat url("assets/img/facebook_ico.svg");
+}
+
+.employee__contact-icon_google {
+    background: center / contain no-repeat url("assets/img/google_ico.svg");
+}
+
+.employee__contact-icon_twitter {
+    background: center / contain no-repeat url("assets/img/twitter_ico.svg");
+}
+
+.employee__contact-icon_linked-in {
+    background: center / contain no-repeat url("assets/img/linkedin_ico.svg");
+}
+
+.about-us__shadow {
+    height: 6px;
+    background-color: var(--color-light);
+}
