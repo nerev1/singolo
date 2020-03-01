@@ -27,6 +27,10 @@
     --transition-time: all .5s ease-out;
 }
 
+* {
+    box-sizing: border-box;
+}
+
 html {
     font-size: 10px;
 }
@@ -49,7 +53,7 @@ body {
 
 
 .portfolio {
-    padding: 68px 0 46px 0;
+    padding: 70px 0 46px 0;
     background: var(--color-header);
 }
 
@@ -200,7 +204,7 @@ body {
     font-family: "Lato";
     font-weight: 400;
     text-align: justify;
-    margin: 9px 0 0 0;
+    margin: 10px 0 0 0;
 }
 
 .employee__info_adam {
@@ -210,12 +214,12 @@ body {
 
 .employee__contacts {
     display: flex;
-    margin: 23px 0 0 0;
+    margin: 24px 0 0 0;
 }
 
 .employee__contact-icon {
-    width: 30px;
-    height: 30px;
+    width: 32px;
+    height: 32px;
     margin-right: 8.5px;
     border: 1px solid var(--color-icon);
     border-radius: 50%;
