@@ -139,3 +139,61 @@ body {
     height: 7px;
     background: var(--color-header-shadow);
 }
+
+/* about-us section*/
+
+.about-us {
+    padding: 69px 0 67px 0;
+}
+
+.about-us__title {
+    font-size: 3.0rem;
+    line-height: 1.8rem;
+    color: var(--color-text-darker);
+    font-family: "Lato";
+    font-weight: 900;
+    margin: 0;
+}
+
+.about-us__text {
+    margin: 26px 0 0 0;
+    text-align: justify;
+}
+
+.about-us__employees {
+    margin: 45px 0 0 0;
+}
+
+.employee {
+    width: 301px;
+}
+
+.employee__photo {
+    overflow: hidden;
+    width: 300px;
+    height: 300px;
+}
+
+.employee__name {
+    font-size: 1.8rem;
+    line-height: 1.8rem;
+    color: var(--color-text-darker);
+    font-family: "Lato";
+    font-weight: 900;
+    margin: 17px 0 0 0;
+    letter-spacing: -0.1px;
+}
+
+.employee__info {
+    font-size: 1.2rem;
+    line-height: 2.2rem;
+    color: var(--color-text);
+    font-family: "Lato";
+    font-weight: 400;
+    text-align: justify;
+    margin: 9px 0 0 0;
+}
+
+.employee__info_adam {
+    letter-spacing: -0.1px;
+}
