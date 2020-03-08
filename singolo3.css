@@ -55,7 +55,7 @@ body {
 
 .quote {
     background: var(--color-primary);
-    padding: 69px 0 41px 0;
+    padding: 69px 0 46px 0;
     letter-spacing: -0.1px;
 }
 
@@ -118,7 +118,7 @@ body {
 
 .form__textarea {
     resize: none;
-    padding-bottom: 0;
+    padding-bottom: 16px;
 }
 
 .form__submit {
@@ -224,7 +224,7 @@ body {
 }
 
 .contacts {
-    padding: 21px 0;
+    padding: 22px 0;
     line-height: 1rem;
 }
 
