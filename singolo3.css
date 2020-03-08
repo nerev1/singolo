@@ -55,7 +55,7 @@ body {
 
 .quote {
     background: var(--color-primary);
-    padding: 69px 0 0 0;
+    padding: 69px 0 41px 0;
     letter-spacing: -0.1px;
 }
 
@@ -148,7 +148,7 @@ body {
 }
 
 .contact-info__links {
-    margin-top: 21px;
+    margin-top: 19px;
     display: flex;
     flex-direction: column;
 }
@@ -188,4 +188,58 @@ body {
     background: center / cover no-repeat url(/assets/img/mail.svg);
     width: 11px;
     height: 8px;
+}
+
+.quote-shadow {
+    height: 4px;
+    background: #ea676b;
+}
+
+.footer {
+    background: var(--color-header);
+}
+
+.footer__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contact-icon {
+    width: 32px;
+    height: 32px;
+    margin-left: 4px;
+    border: 1px solid var(--color-icon);
+    border-radius: 50%;
+    display: inline-flex;
+    justify-content: center;
+}
+
+.copyright {
+    font-size: 12px;
+    line-height: 6px;
+    color: #666d89;
+    font-family: "Lato";
+    font-weight: 400;
+}
+
+.contacts {
+    padding: 21px 0;
+    line-height: 1rem;
+}
+
+.contact-icon_facebook {
+    background: center / contain no-repeat url("assets/img/facebook_ico.svg");
+}
+
+.contact-icon_google {
+    background: center / contain no-repeat url("assets/img/google_ico.svg");
+}
+
+.contact-icon_twitter {
+    background: center / contain no-repeat url("assets/img/twitter_ico.svg");
+}
+
+.contact-icon_linked-in {
+    background: center / contain no-repeat url("assets/img/linkedin_ico.svg");
 }
