@@ -55,7 +55,7 @@ body {
 
 .quote {
     background: var(--color-primary);
-    padding: 17px 0 0 0;
+    padding: 69px 0 0 0;
     letter-spacing: -0.1px;
 }
 
@@ -79,8 +79,113 @@ body {
     word-spacing: 0.7px;
 }
 
+.quote__layout-column {
+    margin: 44px 0 0 0;
+} 
+
 .layout-column {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+}
+
+
+.quote__form {
+    width: 620px;
+}
+
+.form__input {
+    width: 100%;
+    border-radius: 5px;
+    background-color: #d6564f;
+    font-size: 12px;
+    line-height: 22px;
+    color: #f48c8f;
+    font-family: "Lato";
+    font-weight: 400;
+    border: none;
+    padding: 8px 0px 8px 16px;
+    margin-bottom: 16px;
+}
+
+.form__input::placeholder {
+    font-size: 12px;
+    line-height: 22px;
+    color: #f48c8f;
+    font-family: "Lato";
+    font-weight: 400;
+}
+
+.form__textarea {
+    resize: none;
+    padding-bottom: 0;
+}
+
+.form__submit {
+    display: none;
+}
+
+.contact-info {
+    width: 300px;
+}
+
+.contact-info__title {
+    font-size: 18px;
+    line-height: 18px;
+    color: #f0d8d9;
+    font-family: "Lato";
+    font-weight: 900;
+}
+
+.contact-info__text {
+    font-size: 12px;
+    line-height: 22px;
+    color: #f0d8d9;
+    font-family: "Lato";
+    font-weight: 400;
+    margin-top: 10px;
+    text-align: justify;
+}
+
+.contact-info__links {
+    margin-top: 21px;
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-info__link {
+    font-size: 12px;
+    line-height: 22px;
+    color: #f0d8d9;
+    font-family: "Lato";
+    font-weight: 400;
+    text-decoration: none   ;
+}
+
+.contact-info__link::before {
+    display: inline-block;
+    content: '';
+    margin: 0px 13px 0 2px;
+}
+
+.contact-info__link_address::before {
+    background: center / cover no-repeat url(/assets/img/location.svg);
+    width: 8px;
+    height: 10px;
+}
+
+.contact-info__link_phone::before {
+    display: inline-block;
+    content: '';
+    background: center / cover no-repeat url(/assets/img/phone.svg);
+    width: 10px;
+    height: 10px;
+}
+
+.contact-info__link_email::before {
+    display: inline-block;
+    content: '';
+    background: center / cover no-repeat url(/assets/img/mail.svg);
+    width: 11px;
+    height: 8px;
 }
