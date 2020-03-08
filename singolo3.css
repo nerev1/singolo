@@ -1,0 +1,50 @@
+@import "assets/fonts.css";
+
+:root {
+    --color-primary: #f06c64;
+    --color-primary-shadow: #ea676b;
+    --color-slider-arrow: #c94549;
+    --color-light: #ffffff;
+    --color-text: #767e9e;
+    --color-text-darker: #666d89;
+    --color-header: #2d303a;
+    --color-header-shadow: #323746;
+    --color-menu-dot: #494e62;
+    --color-background: #f2f2f2;
+    --color-icon: #656d89;
+
+    /*phone colors*/
+    --color-phone-camera: #d8d8d8;
+    --color-camera-dot: #eb5055;
+    --color-phone-speaker: #acacac;
+    --color-phone-screen: #c5c5c5;
+    --color-phone-button: #fafafa;
+    --color-phone-square: #bababa;
+    --color-phone-shadow: rgba(206,93,86,1);
+
+    --transition-time: all .5s ease-out;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 10px;
+}
+
+body {
+    font-family: "Lato";
+    font-weight: 300;
+    font-size: 1.8rem;
+    line-height: 3rem;
+    background: var(--color-background);
+    width: 1020px;
+    margin: auto;
+}
+
+.wrapper {
+    
+    margin: auto;
+    padding: 0 40px;
+}
