@@ -78,3 +78,9 @@ body {
     text-align: justify;
     word-spacing: 0.7px;
 }
+
+.layout-column {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
