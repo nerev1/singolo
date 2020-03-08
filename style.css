@@ -240,11 +240,11 @@ body {
 }
 
 .phone__screen_vertical {
-    background: url("/assets/img/vertical_phone_image.png");
+    background: url("assets/img/vertical_phone_image.png");
 }
 
 .phone__screen_horizontal {
-    background: url("/assets/img/horizontal_phone_image.png");
+    background: url("assets/img/horizontal_phone_image.png");
 }
 
 .phone__button {
