@@ -320,7 +320,7 @@ body {
 
 .services__wrapper {
     padding-top: 69px;
-    padding-bottom: 32px;
+    padding-bottom: 28px;
     letter-spacing: -0.1px;
 }
 
@@ -358,8 +358,8 @@ body {
 }
 
 .features__icon {
-    width: 55px;
-    height: 55px;
+    width: 60px;
+    height: 58px;
     border-radius: 50%;
     border: 2px solid var(--color-text-darker);
     margin: 3px 0 0 0;
@@ -499,7 +499,7 @@ body {
 /* about-us section*/
 
 .about-us {
-    padding: 69px 0 67px 0;
+    padding: 69px 0 64px 0;
 }
 
 .about-us__title {
