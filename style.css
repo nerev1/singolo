@@ -718,7 +718,7 @@ body {
 }
 
 .contact-info__link_address::before {
-    background: center / cover no-repeat url(/assets/img/location.svg);
+    background: center / cover no-repeat url("assets/img/location.svg");
     width: 8px;
     height: 10px;
 }
@@ -726,7 +726,7 @@ body {
 .contact-info__link_phone::before {
     display: inline-block;
     content: '';
-    background: center / cover no-repeat url(/assets/img/phone.svg);
+    background: center / cover no-repeat url("assets/img/phone.svg");
     width: 10px;
     height: 10px;
 }
@@ -734,7 +734,7 @@ body {
 .contact-info__link_email::before {
     display: inline-block;
     content: '';
-    background: center / cover no-repeat url(/assets/img/mail.svg);
+    background: center / cover no-repeat url("assets/img/mail.svg");
     width: 11px;
     height: 8px;
 }
