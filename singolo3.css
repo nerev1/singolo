@@ -25,6 +25,10 @@
     --transition-time: all .5s ease-out;
 }
 
+h1, h2, h3, h4, h5, h6, p {
+    margin: 0;
+}
+
 * {
     box-sizing: border-box;
 }
@@ -47,4 +51,30 @@ body {
     
     margin: auto;
     padding: 0 40px;
+}
+
+.quote {
+    background: var(--color-primary);
+    padding: 17px 0 0 0;
+    letter-spacing: -0.1px;
+}
+
+.quote__title {
+    font-size: 30px;
+    line-height: 18px;
+    color: #f0d8d9;
+    font-family: "Lato";
+    font-weight: 900;
+
+}
+
+.quote__text {
+    font-size: 18px;
+    line-height: 30px;
+    color: #f0d8d9;
+    font-family: "Lato";
+    font-weight: 300;
+    margin-top: 27px;
+    text-align: justify;
+    word-spacing: 0.7px;
 }
