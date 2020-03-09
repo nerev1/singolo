@@ -43,13 +43,13 @@ body {
     font-size: 1.8rem;
     line-height: 3rem;
     background: var(--color-background);
-    width: 1020px;
     margin: auto;
 }
 
 .wrapper {
     
     margin: auto;
+    width: 1020px;
     padding: 0 40px;
 }
 
@@ -740,7 +740,7 @@ body {
 }
 
 .quote-shadow {
-    height: 4px;
+    height: 5px;
     background: #ea676b;
 }
 
