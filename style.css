@@ -320,7 +320,7 @@ body {
 
 .services__wrapper {
     padding-top: 69px;
-    padding-bottom: 28px;
+    padding-bottom: 30px;
     letter-spacing: -0.1px;
 }
 
@@ -394,11 +394,11 @@ body {
 
 .services__shadow {
     height: 6px;
-    color: var(--color-light);
+    background: var(--color-light);
 }
 
 .portfolio {
-    padding: 70px 0 46px 0;
+    padding: 68px 0 46px 0;
     background: var(--color-header);
 }
 
@@ -499,7 +499,7 @@ body {
 /* about-us section*/
 
 .about-us {
-    padding: 69px 0 64px 0;
+    padding: 69px 0 67px 0;
 }
 
 .about-us__title {
@@ -559,7 +559,7 @@ body {
 
 .employee__contacts {
     display: flex;
-    margin: 24px 0 0 0;
+    margin: 22px 0 0 0;
 }
 
 .employee__contact-icon {
@@ -604,7 +604,7 @@ body {
 
 .quote {
     background: var(--color-primary);
-    padding: 69px 0 10px 0;
+    padding: 68px 0 10px 0;
     letter-spacing: -0.1px;
 }
 
@@ -830,4 +830,9 @@ body {
 
 .contact-icon_linked-in {
     background: center / contain no-repeat url("assets/img/linkedin_ico.svg");
+}
+
+.contact-icon:hover {
+    background-color: var(--color-primary);
+    transition: var(--transition-time);
 }
