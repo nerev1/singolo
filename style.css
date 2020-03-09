@@ -604,7 +604,7 @@ body {
 
 .quote {
     background: var(--color-primary);
-    padding: 69px 0 52px 0;
+    padding: 69px 0 10px 0;
     letter-spacing: -0.1px;
 }
 
@@ -643,6 +643,11 @@ body {
     width: 620px;
 }
 
+.form {
+    display: flex;
+    flex-direction: column;
+}
+
 .form__input {
     width: 100%;
     border-radius: 5px;
@@ -655,6 +660,11 @@ body {
     border: none;
     padding: 8px 0px 8px 16px;
     margin-bottom: 16px;
+}
+
+.form__input:hover, .form__input:focus {
+    background: var(--color-menu-dot);
+    transition: var(--transition-time);
 }
 
 .form__input::placeholder {
@@ -672,7 +682,22 @@ body {
 }
 
 .form__submit {
-    display: none;
+    border-radius: 5px;
+    background-color: #d6564f;
+    font-size: 12px;
+    line-height: 22px;
+    color: #f48c8f;
+    font-family: "Lato";
+    font-weight: 400;
+    border: none;
+    padding: 10px 30px;
+    align-self: center;
+}
+
+.form__submit:hover {
+    background-color: var(--color-header);
+    cursor: pointer;
+    transition: var(--transition-time);
 }
 
 .contact-info {
@@ -709,7 +734,12 @@ body {
     color: #f0d8d9;
     font-family: "Lato";
     font-weight: 400;
-    text-decoration: none   ;
+    text-decoration: none;
+}
+
+.contact-info__link:hover {
+    color: var(--color-icon);
+    transition: var(--transition-time);
 }
 
 .contact-info__link::before {
