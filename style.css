@@ -604,7 +604,7 @@ body {
 
 .quote {
     background: var(--color-primary);
-    padding: 69px 0 46px 0;
+    padding: 69px 0 52px 0;
     letter-spacing: -0.1px;
 }
 
@@ -667,7 +667,8 @@ body {
 
 .form__textarea {
     resize: none;
-    padding-bottom: 16px;
+    display: block;
+    height: 202px;
 }
 
 .form__submit {
@@ -697,7 +698,7 @@ body {
 }
 
 .contact-info__links {
-    margin-top: 19px;
+    margin-top: 20px;
     display: flex;
     flex-direction: column;
 }
@@ -714,29 +715,36 @@ body {
 .contact-info__link::before {
     display: inline-block;
     content: '';
-    margin: 0px 13px 0 2px;
+    
+}
+
+.contact-info__link_address {
+    letter-spacing: 0;
 }
 
 .contact-info__link_address::before {
     background: center / cover no-repeat url("assets/img/location.svg");
-    width: 8px;
-    height: 10px;
+    width: 7px;
+    height: 11px;
+    margin: 0px 13px 0 3px;
 }
 
 .contact-info__link_phone::before {
     display: inline-block;
     content: '';
     background: center / cover no-repeat url("assets/img/phone.svg");
-    width: 10px;
-    height: 10px;
+    width: 11px;
+    height: 11px;
+    margin: 0px 12px 0 1px;
 }
 
 .contact-info__link_email::before {
     display: inline-block;
     content: '';
     background: center / cover no-repeat url("assets/img/mail.svg");
-    width: 11px;
+    width: 13px;
     height: 8px;
+    margin: 0 11px 0 0;
 }
 
 .quote-shadow {
@@ -770,6 +778,7 @@ body {
     color: #666d89;
     font-family: "Lato";
     font-weight: 400;
+    margin-left: 1px;
 }
 
 .contacts {
