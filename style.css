@@ -277,12 +277,12 @@ body {
 }
 
 .arrow {
-    width: 15px;
-    height: 15px;
+    width: 20px;
+    height: 20px;
     border: 0 solid var(--color-slider-arrow);
     border-top-width: 5px;
     border-left-width: 5px;
-    border-radius: 3px;
+    border-radius: 4px;
     transform: rotate(-45deg);
     position: relative;
 }
@@ -512,6 +512,7 @@ body {
 }
 
 .about-us__text {
+    color: var(--color-text);
     margin: 26px 0 0 0;
     text-align: justify;
 }
