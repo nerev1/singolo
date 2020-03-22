@@ -143,6 +143,7 @@ body {
     height: 594px;
     align-items: center;
     position: relative;
+    overflow: hidden;
 }
 
 .slider-shadow {
@@ -150,12 +151,24 @@ body {
     height: 6px;
 }
 
-/*Phones*/
-.phones {
+
+
+.slider-block {
     position: absolute;
     width: 100%;
-    top: 0px;
-    left: 0;
+    height: 100%;
+    top: 0;
+    left: 100%;
+}
+
+.slider-block_active {
+    left: 0px;
+}
+
+/*Phones*/
+
+.slider-block-2 {
+    background: center / contain no-repeat url("assets/img/slider-2-image.png");
 }
 
 .phone {
@@ -274,6 +287,7 @@ body {
     display: flex;
     justify-content: space-between;
     width: 100%;
+    z-index: 1;
 }
 
 .arrow {
