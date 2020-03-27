@@ -1,3 +1,4 @@
+//-------------------------------------------------------------------------------navigation
 let menuList = document.querySelector('.menu');
 
 menuList.addEventListener('click', (event) => {
@@ -23,25 +24,51 @@ for (let link of menuLinks) {
     })
 }
 
+//-------------------------------------------------------------------------------slider
 
-let arrowLeft = document.querySelector('.arrow_left');
-let arrowRight = document.querySelector('.arrow_right');
-let sliderImages = document.querySelectorAll('slider-block');
+let sliderSize = document.querySelector('.slider-content').offsetWidth;
+let slides = document.querySelectorAll('.slide');
+let slideAmount = slides.length;
+let activeSlide = 0;
 
-arrowLeft.addEventListener('click', (event) => {
-    document.querySelector('.slider__wrapper').append(document.querySelector('.slider-block'));
+function leftHandler() {
+    
+    let previousSlide = activeSlide == 0 ? slideAmount - 1 : activeSlide - 1;
+    slides[activeSlide].classList.add('active-to-right');
+    slides[previousSlide].classList.add('left-to-active');
+    
+    slides[activeSlide].addEventListener('animationend', event => {
+        event.target.classList.remove('active-to-right');
+        event.target.classList.remove('slide_active');
+    });
+    
+    slides[previousSlide].addEventListener('animationend', event => {
+        event.target.classList.remove('left-to-active');
+        event.target.classList.add('slide_active');
+    });
+    activeSlide = previousSlide;
+}
 
-    for (item of document.querySelectorAll('.slider-block')) {
-        item.classList.remove('slider-block_active');
-    }
-    document.querySelector('.slider-block').classList.add('slider-block_active');
-});
+function rightHandler() {
+    
+    let nextSlide = activeSlide == slideAmount - 1 ? 0 : activeSlide + 1;
+    slides[activeSlide].classList.add('active-to-left');
+    slides[nextSlide].classList.add('right-to-active');
+    
+    slides[activeSlide].addEventListener('animationend', event => {
+        event.target.classList.remove('active-to-left');
+        event.target.classList.remove('slide_active');
+    });
+    
+    slides[nextSlide].addEventListener('animationend', event => {
+        event.target.classList.remove('right-to-active');
+        event.target.classList.add('slide_active');
+    });
+    activeSlide = nextSlide;
+}
 
-arrowRight.addEventListener('click', (event) => {
-    document.querySelector('.slider__wrapper').prepend(document.querySelector('.slider-block:last-of-type'));
+document.querySelector('.arrow_left').addEventListener('click', leftHandler);
 
-    for (item of document.querySelectorAll('.slider-block')) {
-        item.classList.remove('slider-block_active');
-    }
-    document.querySelector('.slider-block:last-of-type').classList.add('slider-block_active');
-});
+document.querySelector('.arrow_right').addEventListener('click', rightHandler);
+
+//-------------------------------------------------------------------------------phones
