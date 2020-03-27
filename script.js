@@ -104,3 +104,26 @@ function tagHandler(event) {
         document.querySelector('.portfolio__images .layout-column').append(imageList[0]);
     }
 }
+
+let imageList = document.querySelectorAll('.portfolio__image');
+
+[].forEach.call(imageList, (image) => {
+    image.addEventListener('mouseover', addImageBorderHover);
+    image.addEventListener('mouseout', removeImageBorderHover);
+    image.addEventListener('click', setActive);
+});
+
+function addImageBorderHover(event) {
+    event.target.closest('.portfolio__image').classList.add('portfolio__image_hovered');
+}
+
+function removeImageBorderHover(event) {
+    event.target.closest('.portfolio__image').classList.remove('portfolio__image_hovered');
+}
+
+function setActive() {
+    for (let image of imageList) {
+        image.classList.remove('.portfolio__image_active');
+    }
+    event.target.closest('.portfolio__image').classList.add('portfolio__image_active');
+}

@@ -581,6 +581,18 @@ body {
     height: 187px;
     margin-bottom: 20px;
     overflow: hidden;
+    box-sizing: border-box;
+}
+
+.portfolio__image_hovered {
+    outline: 5px solid var(--color-menu-dot);
+    cursor: pointer;
+    transition-duration: var(--transition-time);
+}
+
+.portfolio__image_active {
+    outline: 5px solid var(--color-primary);
+    transition-duration: var(--transition-time);
 }
 
 .portfolio__image img {
