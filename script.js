@@ -86,3 +86,21 @@ phoneHorizontal.querySelector('.phone__button').addEventListener('click', turnOf
 function turnOffHorizontal(event) {
     phoneHorizontal.querySelector('.phone__screen').classList.toggle('phone__screen_turned-off');
 }
+
+//-------------------------------------------------------------------------------portfolio
+let tagList = document.querySelectorAll('.tag');
+
+    [].forEach.call(tagList, item => {
+        item.addEventListener('click', tagHandler);
+    });
+
+function tagHandler(event) {
+    let imageList = document.querySelectorAll('.portfolio__image');
+    if (!event.target.classList.contains('tag_active')) {
+        for (let tag of tagList) {
+            tag.classList.remove('tag_active');
+        }
+        event.target.classList.add('tag_active');
+        document.querySelector('.portfolio__images .layout-column').append(imageList[0]);
+    }
+}
