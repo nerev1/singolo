@@ -72,3 +72,17 @@ document.querySelector('.arrow_left').addEventListener('click', leftHandler);
 document.querySelector('.arrow_right').addEventListener('click', rightHandler);
 
 //-------------------------------------------------------------------------------phones
+let phoneVertical = document.querySelector('.phone_vertical');
+let phoneHorizontal = document.querySelector('.phone_horizontal');
+
+phoneVertical.querySelector('.phone__button').addEventListener('click', turnOffVertical);
+
+function turnOffVertical(event) {
+    phoneVertical.querySelector('.phone__screen').classList.toggle('phone__screen_turned-off');
+}
+
+phoneHorizontal.querySelector('.phone__button').addEventListener('click', turnOffHorizontal);
+
+function turnOffHorizontal(event) {
+    phoneHorizontal.querySelector('.phone__screen').classList.toggle('phone__screen_turned-off');
+}

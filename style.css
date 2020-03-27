@@ -327,8 +327,9 @@ body {
     background: url("assets/img/horizontal_phone_image.png");
 }
 
-.phone__screen_vertical_turned-off {
-    display: none;
+.phone__screen_turned-off {
+    background: #000000;
+    transition: var(--transition-time);
 }
 
 .phone__screen_horizontal_turned-off {
@@ -343,6 +344,11 @@ body {
     background: var(--color-phone-button);
     top: 399px;
     left: 86px;
+}
+
+.phone__button:hover {
+    background: var(--color-light);
+    cursor: pointer;
 }
 
 .phone__button-ico {
