@@ -245,24 +245,27 @@ body {
 }
 
 .phone_vertical {
-    position: absolute;
-    top: 53px;
-    left: 112px;
+    top: 9%;
+    left: 11%;
+    z-index: 1;
 }
 
 .phone_horizontal {
     position: absolute;
     transform: rotate(90deg);
-    top: 53px;
-    left: 546px;
+    top: 9%;
+    left: 53.7%;
 }
 
 .phone__base {
     position: absolute;
-    width: 215px;
-    height: 458px;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
     border-radius: 27px;
     background-color: var(--color-background);
+    z-index: 2;
 }
 
 .phone__shadow_vertical {
@@ -279,52 +282,58 @@ body {
 
 .phone__camera {
     position: relative;
-    width: 9px;
-    height: 9px;
+    width: 4%;
+    height: 2%;
     border-radius: 4px;
     background-color: var(--color-phone-camera);
-    top: 17px;
-    left: 103px;
+    top: 3.5%;
+    left: 48%;
+    z-index: 3;
 }
 
 .phone__camera-dot {
     position: absolute;
-    width: 4px;
-    height: 4px;
+    width: 2%;
+    height: 1%;
     border-radius: 2px;
     background-color: var(--color-camera-dot);
-    top: 2.5px;
-    left: 2.5px;
+    top: 4%;
+    left: 49%;
+    z-index: 4;
 }
 
 .phone__speaker {
     position: absolute;
-    width: 36px;
-    height: 5px;
+    width: 17%;
+    height: 1%;
     border-radius: 3px;
     background-color: var(--color-phone-speaker);
-    top: 36px;
-    left: 90px;
+    top: 7.9%;
+    left: 42%;
+    z-index: 3;
 }
 
 .phone__screen {
     position: absolute;
-    width: 188px;
-    height: 333px;
+    width: 87.3%;
+    height: 72.7%;
     background: #000000;
     border: 3px solid var(--color-phone-screen);
     border-radius: 5px;
     box-sizing: content-box;
-    top: 62px;
-    left: 11px;
+    top: 13.5%;
+    left: 5.3%;
+    z-index: 3;
 }
 
 .phone__screen_vertical {
     background: url("assets/img/vertical_phone_image.png");
+    z-index: 4;
 }
 
 .phone__screen_horizontal {
     background: url("assets/img/horizontal_phone_image.png");
+    z-index: 4;
 }
 
 .phone__screen_turned-off {
@@ -338,12 +347,14 @@ body {
 
 .phone__button {
     position: relative;
-    width: 42px;
-    height: 42px;
+    width: 19.5%;
+    height: 9%;
     border-radius: 21px;
     background: var(--color-phone-button);
-    top: 399px;
-    left: 86px;
+    top: 87.2%;
+    left: 40%;
+    z-index: 3;
+
 }
 
 .phone__button:hover {
@@ -353,13 +364,14 @@ body {
 
 .phone__button-ico {
     position: absolute;
-    width: 16px;
-    height: 16px;
+    width: 7.4%;
+    height: 3.4%;
     border: 1px solid var(--color-phone-square);
     box-sizing: border-box;
     border-radius: 4px;
-    top: 13px;
-    left: 13px;
+    top: 91.7%;
+    left: 46.9%;
+    z-index: 4;
 }
 
 
@@ -448,7 +460,6 @@ body {
 .features__item {
     flex-basis: 299px;
     display: flex;
-    justify-content: space-between;
     margin: 0px 0 29px 0px;
 }
 
@@ -457,7 +468,7 @@ body {
     height: 58px;
     border-radius: 50%;
     border: 2px solid var(--color-text-darker);
-    margin: 3px 0 0 0;
+    margin: 3px 20px 0 0;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -566,7 +577,6 @@ body {
 
 .portfolio__images {
     margin: 18px 0 0 0;
-    max-height: 621px;
 }
 
 .layout-column {
@@ -638,8 +648,7 @@ body {
 
 .employee__photo {
     overflow: hidden;
-    width: 300px;
-    height: 300px;
+    width: 100%;
 }
 
 .employee__name {
@@ -966,4 +975,172 @@ body {
 .contact-icon:hover {
     background-color: var(--color-primary);
     transition: var(--transition-time);
+}
+
+
+/*----------------------------------------tablet media----------------------------------------*/
+
+@media (max-width: 1019px) {
+    
+    .wrapper {
+        width: 100%;
+    }
+
+    .slider-block-2 {
+        height: 452px;
+    }
+
+    .slider-block-2 {
+        background-size: contain;
+    }
+
+    .slider-content {
+        width: 100%;
+        height: 100%;
+    }
+
+    .phone {
+        width: 162px;
+        height: 345px;
+    }
+
+    .features__columns {
+        justify-content: space-around;
+    }
+
+    .features__item {
+        margin: 0 7px 39px 7px;
+    }
+
+    .portfolio__images .layout-column {
+        justify-content: space-around;
+    }
+
+    .portfolio__image {
+        margin-right: 7.5px;
+        margin-left: 7.5px;
+    }
+
+    .employee {
+        width: 29%;
+    }
+
+    .employee img {
+        width: 100%;
+    }
+
+    .quote__form {
+        width: 63.8%;
+    }
+
+    .contact-info {
+        width: 32%;
+    }
+
+    .quote__layout-column {
+        margin-top: 19px;
+    }
+    
+}
+
+@media (max-width: 767px) {
+    .menu {
+        display: none;
+    }
+
+    .wrapper {
+        width: 100%;
+        padding: 30px;
+    }
+
+    .slider__wrapper {
+        height: 100%;
+    }
+
+    .slider {
+        height: 218px;
+    }
+
+    .slider-block-2 {
+        background-size: cover;
+    }
+
+    .slider-content {
+        width: 100%;
+        height: 100%;
+    }
+
+    .phone {
+        width: 79.41px;
+        height: 168.5px;
+    }
+
+    .phone__vertical {
+        left: 15%;
+    }
+
+    .features__item {
+        margin: 0 22px 15px 22px;
+    }
+
+    .portfolio__images .layout-column {
+        justify-content: space-around;
+    }
+    
+    .portfolio__image:nth-child(n+9) {
+        display: none;
+    }
+
+    .portfolio__image {
+        margin-right: 8px;
+        margin-left: 8px;
+    }
+
+    .employee {
+        width: 100%;
+        margin-bottom: 34px;
+    }
+
+    .employee__text {
+
+    }
+
+    .employee img {
+        width: 100%;
+    }
+
+    .quote__layout-column {
+        flex-direction: column;
+    }
+    
+    .form, .form__submit {
+        width: 100%;
+    }
+
+    .quote__form {
+        margin-bottom: 32px;
+    }
+
+    .contact-info {
+        width: 100%;
+    }
+
+    .footer__wrapper {
+        justify-content: center;
+        align-items: center;
+    }
+
+    .copyright {
+        display: none;
+    }
+
+    .footer .contacts {
+        margin: 0;
+    }
+}
+
+@media (max-width: 374px) {
+    .wrapper {
+        width: 100%;
+    }
 }
