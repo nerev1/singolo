@@ -1139,8 +1139,3 @@ body {
     }
 }
 
-@media (max-width: 374px) {
-    .wrapper {
-        width: 100%;
-    }
-}
