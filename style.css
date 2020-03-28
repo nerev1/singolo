@@ -567,7 +567,6 @@ body {
 .portfolio__images {
     margin: 18px 0 0 0;
     max-height: 621px;
-    overflow: hidden;
 }
 
 .layout-column {
@@ -582,6 +581,10 @@ body {
     margin-bottom: 20px;
     overflow: hidden;
     box-sizing: border-box;
+}
+
+.portfolio__image:nth-child(n+13) {
+    display: none;
 }
 
 .portfolio__image_hovered {
@@ -889,6 +892,23 @@ body {
 .quote-shadow {
     height: 5px;
     background: #ea676b;
+}
+
+.popup {
+    position: fixed;
+    width: 400px;
+    height: 200px;
+    font-size: 1.4rem;
+    color: var(--color-background);
+    background-color: var(--color-slider-arrow);
+    border: 1px solid var(--color-header-shadow);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    top: calc(50% - 100px);
+    left: calc(50% - 200px);
 }
 
 

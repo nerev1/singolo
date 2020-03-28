@@ -30,9 +30,8 @@ let sliderSize = document.querySelector('.slider-content').offsetWidth;
 let slides = document.querySelectorAll('.slide');
 let slideAmount = slides.length;
 let activeSlide = 0;
-
+let isEnable = true;
 function leftHandler() {
-    
     let previousSlide = activeSlide == 0 ? slideAmount - 1 : activeSlide - 1;
     slides[activeSlide].classList.add('active-to-right');
     slides[previousSlide].classList.add('left-to-active');
@@ -122,8 +121,43 @@ function removeImageBorderHover(event) {
 }
 
 function setActive() {
-    for (let image of imageList) {
-        image.classList.remove('.portfolio__image_active');
-    }
+    [].forEach.call( imageList, item => item.classList.remove('portfolio__image_active'));
     event.target.closest('.portfolio__image').classList.add('portfolio__image_active');
+}
+
+//---------------------------------------------------------------------------popup
+document.querySelector('.form__submit').addEventListener('click', formHandler);
+
+function formHandler() {
+    if (document.querySelector('.form').checkValidity()) {
+        event.preventDefault();
+        let popupBox = document.createElement('div');
+        popupBox.classList.add('popup');
+        document.body.append(popupBox);
+
+        let popupMessage = document.createElement('span');
+        let subjectMessage = document.createElement('span');
+        let describeMessage = document.createElement('span');
+        let buttonOK = document.createElement('button');
+
+        let subjectData = document.querySelector('input[name="subject"]');
+        let describeData = document.querySelector('textarea[name="question"]');
+
+        popupMessage.innerHTML = 'Сообщение отправлено';
+        subjectMessage.innerHTML = (subjectData.value) ? subjectData.value : 'Без темы';
+        describeMessage.innerHTML = (describeData.value) ? describeData.value : 'Без описания';
+        buttonOK.innerHTML = 'OK';
+        buttonOK.addEventListener('click', handlePopupOK);
+
+        popupBox.append(popupMessage);
+        popupBox.append(subjectMessage);
+        popupBox.append(describeMessage);
+        popupBox.append(buttonOK);
+        function handlePopupOK() {
+            popupBox.remove();
+            for (let input of document.querySelectorAll('.form__input')) {
+                input.value = '';
+            }
+        }
+    } 
 }
